@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<style>
+			ul {
+				font-size: 14px;
+				color: #8f8f94;
+			}
+			.mui-btn {
+				padding: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 主界面具体展示内容 -->
+		<div id="slider" class="mui-slider" >
+		  <div class="mui-slider-group mui-slider-loop">
+		    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="http://placehold.it/400x200">
+		      </a>
+		    </div>
+		    <!-- 第一张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x200">
+		      </a>
+		    </div>
+		    <!-- 第二张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x200">
+		      </a>
+		    </div>
+		    <!-- 第三张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x200">
+		      </a>
+		    </div>
+		    <!-- 第四张 -->
+		    <div class="mui-slider-item">
+		      <a href="#">
+		        <img src="http://placehold.it/400x200">
+		      </a>
+		    </div>
+		    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		    <div class="mui-slider-item mui-slider-item-duplicate">
+		      <a href="#">
+		        <img src="http://placehold.it/400x200">
+		      </a>
+		    </div>
+		  </div>
+		  <div class="mui-slider-indicator">
+		    <div class="mui-indicator mui-active"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		    <div class="mui-indicator"></div>
+		  </div>
+		</div>
+        <ul class="mui-table-view mui-grid-view mui-grid-9">
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="notifications_disturb">
+	                <span class="mui-icon mui-icon-home"></span>
+	                <div class="mui-media-body">通知与公告</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="matterConcerned_disturb">
+	                <span class="mui-icon mui-icon-email"><span class="mui-badge mui-badge-red">5</span></span>
+	                <div class="mui-media-body">事项关注</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="approval_disturb">
+	                <span class="mui-icon mui-icon-chatbubble"></span>
+	                <div class="mui-media-body">送审与审批</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="caseHandle_distrub">
+	                <span class="mui-icon mui-icon-location"></span>
+	                <div class="mui-media-body">信访办理</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="caseSearch_distrub">
+	                <span class="mui-icon mui-icon-search"></span>
+	                <div class="mui-media-body">事项查询</div>
+	            </a>
+	        </li>
+	        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="dataReport_distrub">
+	                <span class="mui-icon mui-icon-phone"></span>
+	                <div class="mui-media-body">数据报表</div>
+	            </a>
+	        </li>
+	         <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            <a id="situationAnalysis_distrub">
+	                <span class="mui-icon mui-icon-phone"></span>
+	                <div class="mui-media-body">态势分析</div>
+	            </a>
+	        </li>
+        </ul>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+                    <div class="mui-media-body">
+                       	消息1
+                        <p class="mui-ellipsis">这里是消息1容器</p>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+                    <div class="mui-media-body">
+                       	 消息2
+                        <p class="mui-ellipsis">这里是消息2容器</p>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+                    <div class="mui-media-body">
+                    	消息3
+                        <p class="mui-ellipsis">这里是消息3容器</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+		<script src="js/mui.min.js"></script>
+		<script src="js/app.js"></script>
+		<script>
+			(function($, doc) {
+				$.init();
+				$.plusReady(function() {
+					// 通知与公告
+					document.getElementById("notifications_disturb").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "notifications.html",
+							id: "notifications"
+						});
+					});
+					// 信访事项关注
+					document.getElementById("matterConcerned_disturb").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "matterConcerned.html",
+							id: "matterConcerned"
+						});
+					});
+					// 送审与审批
+					document.getElementById("approval_disturb").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "approval.html",
+							id: "approval"
+						});
+					});
+					// 信访办理
+					document.getElementById("caseHandle_distrub").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "caseHandle.html",
+							id: "caseHandle"
+						});
+					});
+					// 信访事项查询
+					document.getElementById("caseSearch_distrub").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "caseSearch.html",
+							id: "caseSearch"
+						});
+					});
+					// 信访数据报表
+					document.getElementById("dataReport_distrub").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "dataReport.html",
+							id: "dataReport"
+						});
+					});
+					// 信访态势分析
+					document.getElementById("situationAnalysis_distrub").addEventListener("tap", function(event) {
+						mui.openWindow({
+							url: "situationAnalysis.html",
+							id: "situationAnalysis"
+						});
+					});
+				});
+			}(mui, document));
+		</script>
+	</body>
+
+</html>
